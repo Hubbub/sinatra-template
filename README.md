@@ -25,3 +25,13 @@ heroku restart
 
 Logging to Papertrail needs to be configured separately by visiting
 https://papertrailapp.com/systems/new and selecting "I use Heroku".
+
+## Local Development
+
+Install any dependent gems, and run rackup. This is tested on Ruby 2.1,
+but should run on 1.9 upwards.
+
+```
+bundle
+PORT=8080 rackup
+```
