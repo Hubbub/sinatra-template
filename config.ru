@@ -2,9 +2,6 @@ ENV["NEW_RELIC_AGENT_ENABLED"] ||= "false"
 ENV["CORS_ALLOWED_ORIGINS"] ||= "http://localhost:#{ENV["PORT"]}"
 ENV["CORS_ALLOWED_HEADERS"] ||= "Content-Type"
 
-require 'pp'
-pp ENV
-
 require 'rack/cors'
 require './web'
 require 'newrelic_rpm'
